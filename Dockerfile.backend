@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
 RUN mkdir /code
 WORKDIR /code
 COPY django/requirements.txt /code/django/
-RUN pip3 install gunicorn && pip3 install -r /code/django/requirements.txt
+RUN pip3 install --upgrade pip && pip3 install gunicorn && pip3 install -r /code/django/requirements.txt
 
 run mkdir /var/oda
 RUN mkdir /var/oda/cache
