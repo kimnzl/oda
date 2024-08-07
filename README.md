@@ -87,3 +87,8 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 
 ```
+## Docker Installation (windows)
+
+When checking out the repo remember set autocrlf to false. This might require a revert to fix any files.
+
+Otherwise you will get an error about ```bash\r```
